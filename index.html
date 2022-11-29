@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <title>Nicolas Franceschini</title>
+        <link href = "CSS/Style.css" rel = "stylesheet">
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <div class="nom">
+                Nicolas Franceschini
+            </div>
+            <ul class="navmenu">
+                <a href = "#carte"><li>Profil</li></a>
+                <a href = "#MesProjets"><li>Mes Projets</li></a>
+                <a href = "#MeContacter"><li>Me Contacter</li></a>
+            </ul>
+        </div>
+
+        <div class="Profil">
+            <div id = "carte" class="carte-info" data-tilt>
+                <img id ="Photo" src = "Images/Image1.png">
+                <h1>Nicolas Franceschini</h1>
+                <p>Etudiant à l'IUT Paris Rives de Seine<br>BUT Informatique</p>
+                <div class = "réseaux">
+                    <a href = "https://github.com/Teccybeck"><img src = "Images/github.png"></a>
+                    <a href = "https://www.linkedin.com/in/nicolas-franceschini-b69a4523b/"><img src = "Images/linkedin.png"></a>
+                </div>
+                <input type = "button" id = "CV" value = "Télécharger mon CV">
+            </div>
+        </div>
+
+        <div class="barre" id = "MesProjets">barre</div>
+
+        <div class="MesProjets">
+            <h1>Mes Projets</h1>
+            <div class="projets">
+                <div class="projet" data-tilt>
+                    <h3>Projet 1</h3>
+                    <img src = "Images/demineur.png">
+                    <p class="description">Maecenas molestie tempor dui in vestibulum. Ut viverra euismod sem. Integer porttitor semper efficitur. 
+                        Fusce ornare lacus eget aliquam semper. Duis ultricies lacus at arcu venenatis pellentesque. Nunc porta purus ac nulla mattis tincidunt. 
+                        Donec felis nibh, hendrerit eget feugiat id, tincidunt a libero. Etiam lobortis condimentum elit. Suspendisse et neque lacinia, bibendum nunc eget, 
+                        tincidunt elit. Maecenas lacinia nec ante ac ornare. Fusce pretium lorem id velit auctor malesuada eget eu massa.</p>
+                </div>
+                <div class="projet" data-tilt>
+                    <h3>Projet 2</h3>
+                    <img src = "Images/demineur.png">
+                    <p class="description">Maecenas molestie tempor dui in vestibulum. Ut viverra euismod sem. Integer porttitor semper efficitur. 
+                        Fusce ornare lacus eget aliquam semper. Duis ultricies lacus at arcu venenatis pellentesque. Nunc porta purus ac nulla mattis tincidunt. 
+                        Donec felis nibh, hendrerit eget feugiat id, tincidunt a libero. Etiam lobortis condimentum elit. Suspendisse et neque lacinia, bibendum nunc eget, 
+                        tincidunt elit. Maecenas lacinia nec ante ac ornare. Fusce pretium lorem id velit auctor malesuada eget eu massa.</p>
+                </div>
+                <div class="projet" data-tilt>
+                    <h3>Projet 3</h3>
+                    <img src = "Images/demineur.png">
+                    <p class="description">Maecenas molestie tempor dui in vestibulum. Ut viverra euismod sem. Integer porttitor semper efficitur. 
+                        Fusce ornare lacus eget aliquam semper. Duis ultricies lacus at arcu venenatis pellentesque. Nunc porta purus ac nulla mattis tincidunt. 
+                        Donec felis nibh, hendrerit eget feugiat id, tincidunt a libero. Etiam lobortis condimentum elit. Suspendisse et neque lacinia, bibendum nunc eget, 
+                        tincidunt elit. Maecenas lacinia nec ante ac ornare. Fusce pretium lorem id velit auctor malesuada eget eu massa.</p>
+                </div>
+                <div class="projet" data-tilt>
+                    <h3>Projet 4</h3>
+                    <img src = "Images/demineur.png">
+                    <p class="description">Maecenas molestie tempor dui in vestibulum. Ut viverra euismod sem. Integer porttitor semper efficitur. 
+                        Fusce ornare lacus eget aliquam semper. Duis ultricies lacus at arcu venenatis pellentesque. Nunc porta purus ac nulla mattis tincidunt. 
+                        Donec felis nibh, hendrerit eget feugiat id, tincidunt a libero. Etiam lobortis condimentum elit. Suspendisse et neque lacinia, bibendum nunc eget, 
+                        tincidunt elit. Maecenas lacinia nec ante ac ornare. Fusce pretium lorem id velit auctor malesuada eget eu massa.</p>
+                </div>
+            </div>
+
+            <div class="barre" id = "MeContacter">barre</div>
+
+            <div class="MeContacter">
+                <h1>Me Contacter</h1>
+                <div class="formulaire">
+                    <div class="info">
+                        <div id = "nom"><input type= "text" placeholder="Nom" name = "nom"></div>
+                        <div id = "prenom"><input type= "text" placeholder="Prenom" name = "prenom"></div>
+                        <div id = "mail"><input type= "text" placeholder="Email" name = "mail"></div>
+                    </div>
+                    <div id = "message"><textarea placeholder="Message" name = "message"></textarea></div>
+                    <input type = "button" id = "Contacter" value = "Me Contacter">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script src = "JS/carte.js"></script>
+    </body>
+</html>

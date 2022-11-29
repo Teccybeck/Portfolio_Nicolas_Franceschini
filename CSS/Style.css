@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #08040c;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    height : 100px;
+    background-color: #181c24;
+    color: #fff;
+    box-shadow: 0px 0px 10px #6E56B9;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.nom {
+    width: 40%;
+    /*border: 1px solid white;*/
+    text-align: center;
+    font-size: xx-large;
+}
+
+.navmenu {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5%;
+    list-style-type:none;
+    padding-right: 10%;
+    align-items: center;
+    /*border: 1px solid white;*/
+}
+
+.navmenu li {
+    transition: color 0.2s;
+}
+
+.navmenu li:hover {
+    color: #6E56B9;
+}
+
+.Profil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 950px;
+    padding-top: 70px;
+}
+
+.carte-info {
+    width: 90%;
+    max-width: 30%;
+    text-align: center;
+    border: 1px solid #6E56B9;
+    border-radius: 10px;
+    padding: 50px 30px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.carte-info #Photo {
+    width: 60%;
+    border-radius: 50%;
+    border: 1px solid #6E56B9;
+}
+
+.carte-info h1 {
+    font-size: 45px;
+    font-weight: 600px;
+    margin-top: 20px;
+}
+
+.carte-info p {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.réseaux img{
+    width: 10%;
+    margin: 5px 10px;
+}
+
+#CV {
+    background-color: #6E56B9;
+    padding: 10px 10px;
+    font-size: 30px;
+    border: 0px solid #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#CV:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.barre {
+    background-color: #181c24;
+    color: #181c24;
+    font-size: 2px;
+    margin: 0 100px 70px;
+}
+
+.MesProjets {
+    text-align: center;
+}
+
+.projets {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 5%;
+}
+
+.projet {
+    flex: 1 1 45%;
+    margin: 30px 0;
+    border: 1px solid #6E56B9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.projet img{
+    padding: 10px 0;
+}
+
+.MeContacter {
+    padding-bottom: 80px;
+}
+
+.MeContacter h1 {
+    padding-bottom: 60px;
+}
+
+.formulaire {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #6E56B9;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.formulaire input, .formulaire textarea{
+    outline: none;
+    padding: 10px;
+    border: 2px solid #6E56B9;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.info > *{
+    flex: 1 1 25%;
+}
+
+#message {
+    flex: 1 1 100%;
+    text-align: left;
+    padding: 0 40px;
+    text-align: center;
+}
+
+#message textarea{
+    resize: none;
+    width: 100%;
+    height: 160px;
+    margin: 10px 0;
+}
+
+#Contacter {
+    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
+    background-color: #6E56B9;
+    padding: 10px 10px;
+    border: 0px solid #fff;
+    margin: 10px 0;
+}
+
+#Contacter:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
