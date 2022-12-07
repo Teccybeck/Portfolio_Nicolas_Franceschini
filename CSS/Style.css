@@ -204,20 +204,23 @@ a {
     resize: none;
     width: 100%;
     height: 160px;
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 
 #Contacter {
-    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
     background-color: #6E56B9;
+    margin: 0 100px;
+    color: #08040c;
     padding: 10px 10px;
-    border: 0px solid #fff;
-    margin: 10px 0;
+    font-weight: 1000;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s;
+    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
 }
 
 #Contacter:hover {
     color: #fff;
-    transform: scale(1.2);
+    font-size: 18px;
+    border: 1px solid #fff;
 }
