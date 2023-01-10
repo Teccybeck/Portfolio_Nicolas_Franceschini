@@ -153,8 +153,8 @@ a {
     backdrop-filter: blur(5px);
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: space-evenly;
+    gap: 15px;
 }
 
 .projet h3 {
@@ -174,74 +174,73 @@ a {
     color: #6E56B9;
 }
 
-/*.MeContacter {
-    padding-bottom: 80px;
+#regledujeu {
+    text-decoration: underline;
+    transition: color 0.2s;
 }
 
-.MeContacter h1 {
-    padding-bottom: 60px;
+#regledujeu:hover {
+    color: #6E56B9;
 }
 
-.formulaire {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px 40px;
-    border-radius: 10px;
-    border: 1px solid #6E56B9;
-    background: rgba(255,255,255,0.05);
-    box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
-    backdrop-filter: blur(5px);
-}
-
-.formulaire input, .formulaire textarea{
-    outline: none;
-    padding: 10px;
-    border: 2px solid #6E56B9;
-    border-radius: 10px;
-}
-
-.info {
+footer {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    margin-bottom: 70px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
-.info > *{
-    flex: 1 1 25%;
-}
-
-#message {
-    flex: 1 1 100%;
-    text-align: left;
-    padding: 0 40px;
-    text-align: center;
-}
-
-#message textarea{
-    resize: none;
+footer h1 {
     width: 100%;
-    height: 160px;
-    margin: 10px 0 20px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#Contacter {
-    background-color: #6E56B9;
-    margin: 0 100px;
+.champcontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 50%;
+    margin: 5px 0;
+}
+
+.champcontact img {
+    width: 5%;
+}
+
+.champcontact a {
+    transition: color 0.2s;
+}
+
+.champcontact a:hover {
+    color:#6E56B9;
+}
+
+#remonter {
+    position: fixed;
+    right: -100px;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background: #6E56B9;
+    border: 1px solid #6E56B9;
     color: #08040c;
-    padding: 10px 10px;
-    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s;
     box-shadow: 0 4px 30px rgba(82, 13, 122, 0.3);
+    cursor: pointer;
+    transition: right 0.5s, transform 0.2s;
 }
 
-#Contacter:hover {
+#remonter:hover {
+    transform: scale(1.2);
     color: #fff;
-    font-size: 18px;
-    border: 1px solid #fff;
-}*/
+    border-color:#fff;
+}
 
 @media screen and (max-width:1200px){
     .carte-info {
