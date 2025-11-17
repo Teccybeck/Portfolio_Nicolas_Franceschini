@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nicolas Franceschini - ePortfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Nicolas Franceschini</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Parcours</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle-button">☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="hero">
+        <div class="container">
+            <div class="profile-info">
+                <img src="assets/profile.jpg" alt="Photo de profil" class="profile-pic">
+                <h2>Étudiant en M2 Informatique</h2>
+                <p>Parcours Données Connaissances et Intelligence</p>
+                <a href="assets/CV_Nicolas_Franceschini.pdf" class="btn-primary">Voir mon CV</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Mes Compétences Techniques</h2>
+            <div class="skills-grid">
+    
+                <div class="skills-category">
+                    <h3>Langages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>Virtual Basic</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+    
+                <div class="skills-category">
+                    <h3>Bases de Données & Data</h3>
+                    <ul>
+                        <li><strong>SQL :</strong> MySQL, PostgreSQL</li>
+                        <li><strong>NoSQL :</strong> Firebase</li>
+                        <li><strong>Analyse de Données :</strong> Pandas, NumPy</li>
+                        <li><strong>Machine Learning :</strong> Scikit-learn, TensorFlow</li>
+                    </ul>
+                </div>
+    
+                <div class="skills-category">
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li>HTML - CSS - JS - PHP</li>
+                        <li><strong>Front-end :</strong> Bootstrap, Jest, Cypress</li>
+                        <li><strong>Back-end :</strong> Flask (Python)</li>
+                        <li>APIs RESTful</li>
+                    </ul>
+                </div>
+    
+                <div class="skills-category">
+                    <h3>Outils & Environnement</h3>
+                    <ul>
+                        <li><strong>Gestion de version :</strong> Git / GitHub</li>
+                        <li><strong>Conteneurisation :</strong> Docker</li>
+                        <li><strong>Système :</strong> Linux / Shell Scripting</li>
+                        <li><strong>Méthodologie :</strong> Méthodes Agiles (Scrum)</li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="timeline-section">
+        <div class="container">
+            <h2>Mon Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>BUT Informatique</h3>
+                    <p class="period">2021 - 2024</p>
+                    <p class="institution">IUT Paris Rives de Seine / Université du Québec Au Canada</p>
+                    <p>J'ai acquis mes premières bases solides en informatique au cours de mon BUT (Bachelor Universitaire de Technologie), qui était déjà un peu axé sur le domaine des données. J'ai passé mes deux premières années à l'IUT Paris Rives de Seine en France, avant de compléter ma troisième année par un programme d'échange au Canada.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Stage BUT 2 : Testeur QA</h3>
+                    <p class="period">Avril 2023 - Mai 2023</p>
+                    <p class="institution">Atlas Music</p>
+                    <p>Mon rôle était de réaliser des suite de tests (front-end) sur le site internet de la startup Atlas Music. Pour cefaire, j’ai pu utiliser les technologies Jest et Cypress.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Stage BUT 3 : Optimisation de l'IA des machines et de l'architecture
+orientée données</h3>
+                    <p class="period">Avril 2024 - Juin 2024</p>
+                    <p class="institution">Groupe Conseil Fillon</p>
+                    <p>L'entreprise utilisait une solution en Python pour ses simulation de chaine de production et l'objectif de mon équipe était de d'améliorer cette solution en utilisant un langage plus performant, Rust.</p>
+                    <a href="assets/Rapport Stage BUT3.pdf" target="_blank" class="btn-secondary">Voir le Rapport</a>
+                </div>
+                <div class="timeline-item">
+                    <h3>Master Informatique</h3>
+                    <p class="period">2024 - 2026</p>
+                    <p class="institution">Université Paris Cité</p>
+                    <p>Inscrit en Master Données, Connaissances et Intelligence (DCI), mon parcours se concentre sur toutes les étapes du cycle de vie des données J'y acquiers l'expertise nécessaire pour la gestion, l'extraction et l'analyse de données complexes, avec un fort accent sur l'exploitation des connaissances via les méthodes d'Intelligence Artificielle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="cpp">C++</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="vb">VB</button>
+                <button class="filter-btn" data-filter="r">R</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="python ml">
+                    <img src="assets/TER.png">
+                    <h3>Projet Tutoré</h3>
+                    <p>Comparaison de plusieurs approches de classification pour l'analyse des données sociales</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/TER-Comparaison-de-plusieurs-approches-de-classification-pour-l-analyse-des-donnees-sociales" target="_blank" class="btn-secondary">Code Source</a>
+                        <a href="assets/Rapport TER Nicolas Franceschini - Quentin Wendling.pdf" target="_blank" class="btn-secondary">Voir le Rapport</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="python ml">
+                    <img src="assets/Big Data.png">
+                    <h3>Projet Big Data</h3>
+                    <p>Prédiction de Tsunamis à partir de données sismiques</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/Prediction-de-tsunami-a-partir-de-donnees-sismiques" target="_blank" class="btn-secondary">Code Source</a>
+                        <a href="assets/FRANCESCHINI_WENDLING_HAMMOUCHE_EL QCHIRI.pdf" target="_blank" class="btn-secondary">Voir le Rapport</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <img src="assets/Carte.png">
+                    <h3>Carte intéractive</h3>
+                    <p>Application Web permettant de répertorier des endroits visités (restaurant, musée, ...) sur une carte et de les noter. L'application possède un système de compte pour retrouver ses points à chaque nouvelle connexion.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/Projet_Web" target="_blank" class="btn-secondary">Code Source</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="java">
+                    <img src="assets/6quiprend.jpg">
+                    <h3>6 qui prend</h3>
+                    <p>Projet ayant pour but de recréer le jeu de carte "6 qui prend" en java. L'application n'a pas d'interface, le jeu s'effectue dans la console.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/6-qui-prend" target="_blank" class="btn-secondary">Code Source</a>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="cpp">
+                    <img src="assets/Comment-jouer-au-demineur--1024x576.jpg">
+                    <h3>Analyse partie démineur</h3>
+                    <p>L'objectif de ce projet n'était pas de creer un logiciel permettant de jouer au démineur mais plutôt un logiciel permettant d'analyser une partie déjà en cours (donnée via un fichier texte) et de déterminer si elle est gagnée ou non.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/Demineur-Cpp" target="_blank" class="btn-secondary">Code Source</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="vb">
+                    <img src="assets/Comment-jouer-au-demineur--1024x576.jpg">
+                    <h3>Démineur</h3>
+                    <p>Contrairement au démineur réalisé en C++, le but de ce projet était de créer une application en Virtual Basic reproduisant le jeu Démineur. L'application permet aussi d'enregistrer les scores des joueurs et de les consulter tel un classement.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/QuentinWendling/Demineur-VB" target="_blank" class="btn-secondary">Code Source</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="r">
+                    <img src="assets/R.png">
+                    <h3>Analyse de données Stephen Curry</h3>
+                    <p>Le but de ce projet était de déterminer si grâce aux statistiques de la NBA si Stephen Curry était ou non le meilleur shooter à trois points de l'histoire de la ligue.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teccybeck/Stephen-Curry-est-il-le-meilleur-shooter-a-trois-points" target="_blank" class="btn-secondary">Code Source</a>
+                    </div>
+                </article>
+
+                </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <p>Contactez-moi : <a href="mailto:nicolas.franceschini0312@gmail.com">nicolas.franceschini0312@gmail.com</a> | Tél : 0782900744</p>
+            <div class="social-links">
+                <a href="[Lien LinkedIn]" target="_blank">LinkedIn</a> |
+                <a href="[Lien GitHub]" target="_blank">GitHub</a>
+            </div>
+            <p>&copy; 2025 Nicolas Franceschini. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
