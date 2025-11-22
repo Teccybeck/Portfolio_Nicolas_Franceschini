@@ -1,4 +1,6 @@
+/* --- 1. Réinitialisation et Variables Globales --- */
 :root {
+    /* Thème Sombre */
     --primary-color: #8b1538;
     --secondary-color: #5d0f28;
     --glow-color: #ff4040;
@@ -7,7 +9,6 @@
     --gradient-main: linear-gradient(90deg, #5d0f28 0%, #8b1538 100%);
     --gradient-accent: linear-gradient(45deg, #a52a2a, #8b1538);
     --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
     --background-html: #0d0d0d;
     --card-bg: rgba(28, 28, 30, 0.7);
     --card-border: rgba(255, 255, 255, 0.1);
@@ -16,6 +17,7 @@
     --timeline-point-bg: #1a1a1a;
 }
 
+/* Thème Clair */
 body.light-mode {
     --text-color: #343A40;
     --text-accent: #000000;
@@ -53,7 +55,7 @@ body.light-mode {
     background-color: var(--background-html);
 }
 
-/* Lueurs de fond */
+/* Lueurs en fond */
 body::before, body::after {
     content: '';
     position: fixed;
@@ -65,7 +67,7 @@ body::before, body::after {
 }
 
 body.light-mode::before, body.light-mode::after {
-    opacity: 0 !important;
+    opacity: 0 !important; /* Cache les lueurs en mode clair */
 }
 
 body::before {
@@ -96,6 +98,7 @@ body::after {
     to { transform: translate(-20px, -40px) scale(1.1); opacity: 0.6; }
 }
 
+/* --- Conteneur principal --- */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -103,6 +106,7 @@ body::after {
     padding: 0 20px;
 }
 
+/* --- Header --- */
 .main-header {
     background: var(--gradient-main);
     color: white;
@@ -184,7 +188,6 @@ body.light-mode section:nth-child(even) {
     background-color: #f8f8f8; 
 }
 
-
 h2 {
     font-size: 2.5em;
     margin-bottom: 60px;
@@ -201,7 +204,7 @@ body.light-mode h2 {
     color: var(--primary-color);
 }
 
-.skills-category, .project-card, .profile-info, .timeline-item {
+.skills-category, .project-card, .timeline-item {
     background-color: var(--card-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -214,7 +217,6 @@ body.light-mode h2 {
 
 body.light-mode .skills-category,
 body.light-mode .project-card,
-body.light-mode .profile-info,
 body.light-mode .timeline-item {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -225,28 +227,76 @@ body.light-mode .timeline-item {
     box-shadow: 0 0 20px var(--hover-shadow-color);
 }
 
+/* A propos */
 #about.hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 120px;
+    text-align: left;
 }
 
 .profile-info {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid var(--primary-color);
+.hero-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(45deg, var(--primary-color), var(--glow-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
 }
 
-/* --- Section Compétences --- */
+#about.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+    background: none;
+    -webkit-text-fill-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.hero-subtitle {
+    font-size: 1.3em;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    font-size: 1.15em;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+body.light-mode .hero-title {
+    background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode #about.hero h2,
+body.light-mode .hero-description {
+    color: var(--text-color);
+    -webkit-text-fill-color: initial;
+}
+
+/* Compétences */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -288,11 +338,19 @@ body.light-mode .skills-category h3 {
     transition: all 0.3s ease;
 }
 
+body.light-mode .skills-category li {
+    background-color: #e9ecef;
+}
+
 .skills-category li:hover {
     background-color: rgba(0, 0, 0, 0.3);
     border-left-color: var(--primary-color);
     transform: translateX(10px);
     box-shadow: 0 0 15px rgba(139, 21, 56, 0.4);
+}
+
+body.light-mode .skills-category li:hover {
+    background-color: #dee2e6;
 }
 
 .skills-category li strong {
@@ -301,7 +359,7 @@ body.light-mode .skills-category h3 {
     margin-right: 5px;
 }
 
-/* --- Section Parcours --- */
+/* Parcours */
 .timeline {
     position: relative;
     max-width: 1000px;
@@ -362,7 +420,7 @@ body.light-mode .timeline::after {
 body.light-mode .timeline-item .period { color: #6c757d; }
 
 
-/* --- Section Projets --- */
+/* Projets */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -419,6 +477,7 @@ body.light-mode .project-links {
     border-top-color: #eee;
 }
 
+/* --- Footer --- */
 .main-footer {
     background-color: var(--secondary-color);
     color: var(--text-accent);
@@ -427,11 +486,6 @@ body.light-mode .project-links {
     border-top: 2px solid var(--primary-color);
     text-align: center;
 }
-
-body.light-mode .main-footer {
-    background-color: #343a40;
-}
-
 
 .main-footer a { 
     color: var(--text-accent); 
@@ -447,6 +501,7 @@ body.light-mode .main-footer a {
     color: white;
 }
 
+/* Utilitaires (boutons, ...) */
 .btn-primary, .btn-secondary {
     display: inline-block;
     padding: 10px 20px;
@@ -519,10 +574,9 @@ body.light-mode .filter-btn:hover {
 
 .project-card.hidden { display: none !important; }
 
-/* --- Animations au scroll --- */
+/* Animations au scroll */
 .skills-category,
 .project-card,
-.profile-info,
 .timeline-item,
 h2 {
     opacity: 0;
@@ -532,7 +586,6 @@ h2 {
 
 .skills-category.visible,
 .project-card.visible,
-.profile-info.visible,
 .timeline-item.visible,
 h2.visible {
     opacity: 1;
@@ -545,6 +598,7 @@ h2.visible {
     transition-delay: 0.2s;
 }
 
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
     .main-header .container, .container {
         width: 95%;
@@ -570,6 +624,15 @@ h2.visible {
         gap: 5px;
     }
     
+    #about.hero {
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5em;
+    }
+
     .skills-grid, .projects-grid { 
         grid-template-columns: 1fr; 
     }
